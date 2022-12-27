@@ -21,7 +21,8 @@ public class EnemySpawner : MonoBehaviour
         {
             foreach (Transform t in transform)
             {
-                PhotonNetwork.InstantiateRoomObject("enemy", t.position, Quaternion.identity);
+                PhotonNetwork.InstantiateRoomObject(enemyPrefab.name, t.position, Quaternion.identity);
+                GameManager.Instance.currentRoom.enemyCount++;
             }
         }
     }

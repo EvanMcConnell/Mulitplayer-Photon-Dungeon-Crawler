@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     {
         controller = GetComponentInChildren<CharacterController>();
         sprite = GetComponentInChildren<RPCSpriteHandler>();
+
+        transform.Find("Weapon").gameObject.AddComponent<WeaponController>();
     }
 
     void Update()

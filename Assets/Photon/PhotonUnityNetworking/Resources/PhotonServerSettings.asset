@@ -39,6 +39,10 @@ MonoBehaviour:
   - changeColour
   - spawnEnemy
   - RPC_flip
+  - Open
+  - nextRoom
+  - RPC_nextRoom
+  - RPC_Open
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
